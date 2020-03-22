@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.13)
 
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/cmake)
+
 if($CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_BINARY_DIR})
     message(STATUS "in-source build detected!")
     message(FATAL_ERROR "make an out of source build")
@@ -13,7 +15,9 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 option(ENABLE_TESTS "whether to build tests" ON)
 option(BUILD_SHARED_LIBS "whether to build shared libraries" OFF)
 
-add_subdirectory(modern)
+add_subdirectory(src)
+
+add_subdirectory(app)
 
 if(ENABLE_TESTS AND EXISTS ${CMAKE_CURRENT_LIST_DIR}/tests)
     # enable testing must be done before adding tests

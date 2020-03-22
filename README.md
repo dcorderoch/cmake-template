@@ -19,5 +19,5 @@ ctest --build-and-test . build --build-generator "Ninja" --test-command ctest -V
 and for vim users, you can open all the files (including .clang-format, .gitignore and this README) with
 
 ```
-find . \( -path ./.git -o -path ./build -o -path ./modern/build \) -prune -o -type f -print -exec vim {} +
+find . \( -path ./.git -o -path ./build -o -path ./src/modern/build \) -prune -o -type f -print -exec vim {} +
 ```

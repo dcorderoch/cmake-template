@@ -12,7 +12,7 @@ constexpr char version[] = "0.1.0";
 
 enum class type
 {
-  invali,
+  invalid,
   local,
   remote
 };
