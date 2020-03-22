@@ -1,0 +1,31 @@
+BasedOnStyle : Google
+BreakBeforeBraces: Custom
+BraceWrapping: {
+  AfterCaseLabel: true
+  AfterClass: true
+  AfterControlStatement: true
+  AfterEnum: true
+  AfterExternBlock: true
+  AfterFunction: true
+  AfterNamespace: true
+  AfterObjCDeclaration: true
+  AfterStruct: true
+  AfteUnion: true
+  BeforeCatch: true
+  BeforeElse: true
+  IndentBraces: true
+  SplitEmptyFunction: false
+  SplitEmptyFunction: true
+  SplitEmptyNamespace: true
+  SplitEmptyRecord: true
+}
+AccessModifierOffset: -2
+ColumnLimit: 120
+BreakBeforeBraces: Allman
+Cpp11BracedListStyle: false
+ConstructorInitializerAllOnOneLineOrOnePerLine: false
+BreakConstructorInitializers: BeforeComma
+AllowShortCaseLabelsOnASingleLine: true
+SpacesInParentheses: true
+SortIncludes: false
+AllowShortFunctionsOnASingleLine: false
