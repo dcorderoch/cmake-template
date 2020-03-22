@@ -1,8 +1,26 @@
 # cmake-template
 
-small to medium sized C/C++ cmake project template
+small to medium sized C/C++ cmake project template, setup for TDD (can run ctest in top directory, inside vim)
 
 currently only tested on Ubuntu and Arch/Manjaro Linux
+
+structure at a glance
+
+```
+.
+|-- app
+|   |-- CMakeLists.txt # how to compile app
+|   `-- src # app' source, currently only main, with a couple of includes
+|-- CMakeLists.txt # top level CMakeLists.txt
+|-- README.md # this readme!
+|-- src # directory for libraries
+|   |-- CMakeLists.txt # add all libraries, currently only 1
+|   `-- modern # "modern" cmake library, just for show
+`-- tests # tests for app code, if any, currently empty
+    |-- CMakeLists.txt
+    |-- first_test
+    `-- second_test
+```
 
 can be built with
 
